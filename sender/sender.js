@@ -1,4 +1,4 @@
-const webSocket = new WebSocket("ws://SERVER-IP-HERE:3000")
+const webSocket = new WebSocket("ws://127.0.0.2:3000")
 
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
